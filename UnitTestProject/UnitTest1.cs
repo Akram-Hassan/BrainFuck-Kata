@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using BrainFuckLib;
 
 namespace UnitTestProject
 {
@@ -7,8 +8,11 @@ namespace UnitTestProject
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestRunningExecuteMethod()
         {
+            Assert.ThrowsException<NotImplementedException>(() => {
+                string output = BrainFuck.Execute("Code", "Input"); 
+            });
         }
     }
 }
