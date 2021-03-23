@@ -5,7 +5,7 @@ using BrainFuckLib;
 namespace UnitTestProject
 {
     [TestClass]
-    public class UnitTest1
+    public class BrainFuckTests
     {
         [TestMethod]
         public void TestRunningExecuteMethod()
